@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<title>BLOG WEBSITE</title>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* Add a gray background color with some padding */
+        
+        .fig img {
+            width: 100%;
+            height: 80vh;
+            object-fit: cover;
+            filter: brightness(.5);
+            margin: 0;
+        }
+        
+        body {
+            background-color: rgb(53, 52, 52);
+        }
+        
+        .fig p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 80px;
+            line-height: 52px;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .body {
+            font-family: 'Times New Roman', Times, serif;
+            padding: 20px;
+            margin: 0;
+            background: url(border.png);
+        }
+        /* Header/Blog Title */
+        
+        .header {
+            padding: 30px;
+            font-size: 40px;
+            text-align: center;
+            background: white;
+        }
+        /* Create two unequal columns that floats next to each other */
+        /* Left column */
+        
+        .leftside {
+            float: left;
+            width: 75%;
+        }
+        /* Right column */
+        
+        .rightside {
+            float: left;
+            width: 25%;
+            padding-left: 20px;
+        }
+        /* Fake image */
+        
+        .cards {
+            background: url(b.png);
+        }
+        
+        .fakeimg {
+            width: 100%;
+            height: 45vh;
+            filter: brightness(.7);
+            background-color: black;
+        }
+        
+        .fakeig img {
+            width: 100%;
+            height: 45vh;
+            object-fit: cover;
+            margin: 0;
+            filter: brightness(.7);
+            width: 100%;
+        }
+        
+        .fakeim img {
+            width: 100%;
+            height: 30vh;
+            object-fit: cover;
+            margin: 0;
+            filter: brightness(.6);
+            width: 100%;
+        }
+        
+        .fakeimg img {
+            width: 100%;
+            height: 45vh;
+            object-fit: cover;
+            margin: 0;
+            filter: brightness(.7);
+            width: 100%;
+        }
+        /* Add a card effect for articles */
+        
+        .cards {
+            padding: 20px;
+            margin-top: 20px;
+        }
+        /* Clear floats after the columns */
+        
+        .rows:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /* Footer */
+        
+        h2 {
+            color: rgb(214, 214, 214);
+            font-weight: bolder;
+            font-size: 30px;
+        }
+        
+        h3 {
+            color: rgb(211, 211, 211);
+            font-weight: bolder;
+        }
+        
+        h5 {
+            color: rgb(214, 212, 212);
+        }
+        
+        p {
+            color: rgb(226, 225, 225);
+            font-weight: 500;
+        }
+        
+        footer {
+            text-align: center;
+           
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            filter: brightness(.6);
+            background-image: url(b.png);
+        }
+        
+        footer p {
+            padding: 3% 20%;
+            color: rgb(224, 224, 224);
+            font-size: 20px;
+            line-height: 32px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+        
+        @media screen and (max-width: 800px) {
+            .leftside,
+            .rightside {
+                width: 100%;
+                padding: 0;
+            }
+            .fig p  {
+                width: 100%;
+                padding: 0;
+                font-size: 36px;
+            }
+            .footer p{ width: 100%;
+                padding: 0;
+                font-size: 17px;
+               line-height: 15px;
+            }}
+
+
+        @media screen and (max-width: 250px) {
+            .fig p{ width: 100%;
+                padding: 0;
+                font-size: 25px;
+        } .footer p{ width: 100%;
+                padding: 0;
+                font-size: 15px;
+               line-height: 8px;
+            }}
+    </style>
+</head>
+
+<body>
+    <div class="fig"><img src="u.jpg">
+        <p>Modernization</p>
+    </div>
+    <div class="body">
+
+
+
+        <div class="rows">
+            <div class="leftside">
+                <div class="cards">
+                    <h2 style="font-size: 28px;">TITLE HEADING</h2>
+                    <h5 style="font-size: 14px;font-family: monospace;font-weight: lighter;
+                       padding-left:6px;  padding-bottom: 4px;"> 08 June, 2021, 5:13 AM IST Ananth in Voices, Tech, TOI</h5><br>
+                    <div class="fakeimg" style="height:200px;"><img src="i.jpg" alt=""></div><br><br><br><br>
+                    <p style="font-weight: bold;font-size: 18px;
+                        padding-bottom: 4px;">In digital times, platform re-architecture is a big and bold move..</p>
+                    <p> New-age platforms are the building blocks of digital transformation for any organization. Organizations are bringing seamless touchpoints for customers to create uniform brand experience across multiple channels of communication. For
+                        that, organizations are building new platforms and rearchitecting legacy platforms to support their scaling needs in digital times and make existing systems robust enough to create a sustainable differentiation with new-age platforms
+                        to roll-out digital products and services.Outdated systems used by large and long-established businesses require a lot of maintenance and support costs are legacy systems. Usage of mainframes in Banking and Financial institutions
+                        is a perfect example. Mainframes win over any other platform because of their feature richness, dependability, availability and robust security required by banking and financial institutions. </p>
+
+                </div>
+                <div class="cards">
+                    <h2 style="font-size: 28px;">What does it take to initiate Platform Rearchitecture Program?</h2>
+                    <h5 style="font-size: 14px;color: rgb(221, 221, 221);font-family: monospace;font-weight: lighter;
+                        padding-left:6px;  padding-bottom: 4px;">Title description, Sep 2, 2017</h5><br>
+                    <p style="padding-bottom: 4px;">Initiating a legacy rearchitecture program requires change at an enterprise level. It requires bold and specific plan to go with a high-speed improvement approach, break down functional silos, adopt technologies, build partners and
+                        networks to disrupt the legacy platforms.Although a legacy platforms work, they bring instability and incompatibility issues with advancements in operating systems, devices and infrastructures. Most enterprises use legacy platforms
+                        as they continue to serve critical business needs. Right strategy is to revitalize legacy platforms is to adopt faster incrementalism with a step-by-step approach to support scaling needs of digital business processes.</p><br>
+                    <div class="fakeimg" style="height:200px;"><img src="yu.jpg"></div><br><br><br><br><br>
+                    <p style="padding-bottom: 4px;">Across organizations, achieving legacy systems rearchitecture is a tall-order transformation. Many businesses have evolved over the years, instead of rearchitecting their legacy systems they did immediate patch work to keep them up
+                        and running, resulting in poorly integrated platforms and systems, posing modernization challenges. Legacy systems are not just the ones written in old programming languages or hosted in-premises or bulky IT systems, but any systems
+                        that prevent organizations from adopting new technologies or processes for better customer experience and innovation are legacy systems.In supply chain heavy industries, organization build systems quickly to satiate immediate requirements.
+                        These systems have limited integration and scalable flexibility, ultimately holding businesses to compete in a digital era. They are the second category of legacy systems. Old POS systems designed and used by retailers are examples
+                        of such legacy platforms. Custom-made POS systems built to accommodate key business needs cannot adapt to modern age customer experience, IoT, Virtual and augmented reality technologies making them a challenge.Consumerism, Hyper-personalization,
+                        Digitization, Social-Mobile-Analytics-Cloud (AKA the SMAC stack) demand changes in organizations across all processes. Legacy systems cannot support the accelerating pace of business world change. As we talk about changing business
+                        nature, we see three strong reasons for organizations to drive their modernization initiatives–Industries in Media, Transport, Travel have witnessed successful transition to “As-a-service” models while others are fighting legacy
+                        battle. As a reaction to subscription economy, organizations implemented a set of prosaic activities–employing cloud technologies, investing in customer service, and introducing digital products and services without assessing underlying
+                        legacy baggage and their modernization approach.Consumerism, Hyper-personalization, Digitization, Social-Mobile-Analytics-Cloud (AKA the SMAC stack) demand changes in organizations across all processes. Legacy systems cannot support
+                        the accelerating pace of business world change.</p>
+
+                </div>
+            </div>
+            <div class="rightside">
+                <div class="cards">
+                    <h2 style="padding-bottom: 14px;font-size: 25px;text-align: center;">About Me</h2>
+                    <div class="fakeim" style="height:100px;"><img src="k.jpg" alt=""></div><br>
+                    <br><br><br>
+                    <p>Hello everyone!<br>It's Vaibhav Chirde this side. Hope you like my project...</p>
+                </div>
+                <div class="cards">
+                    <h3 style="padding-bottom: 14px;font-size: 25px;text-align: center;">Popular Post</h3>
+                    <div class="fakeig"><img src="p.jpg" alt=""></div><br>
+                    <div class="fakeig"><img src="lo.jpg"></div><br>
+                    <div class="fakeig"><img src="ui.jpg"></div>
+                </div>
+                <div class="cards">
+                    <h3 style="padding-bottom: 14px;font-size: 25px;text-align: center;">Follow Me</h3>
+                    <p><a href="#" style="text-decoration: none;
+                        color: rgb(255, 255, 255);">https://blog.google/products/google-cloud/google-cloud-june-2021/</a>
+                        <br> <a href="#" style="text-decoration: none;
+                        color: rgb(255, 255, 255);">https://twitter.com/intent%20What%20-cloud-june-2021/</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>
+            Copyright&copy2021 All rights reserved<br> <span>Skill Master</span>
+        </p>
+    </footer>
+
+
+
+
+</body>
+
+</html>
